@@ -18,6 +18,7 @@ app.use(logger)
 app.use(cookies())
 
 app.use(cors(corsOptions))
+app.options('*', cors())
 
 
 //middleware to process json
